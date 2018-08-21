@@ -105,7 +105,7 @@ def facial_detection():
             filepath = 'Dataset/user'+str(count)+'.jpg'
             cv2.imwrite(filepath,roi_color)
 
-        cv2.imshow('Attendance Management System', frame)
+        cv2.imshow('Facial Recognition', frame)
         k = cv2.waitKey(30) & 0xff
         if k == 27: #ESC Key
             print(predicted_users)
